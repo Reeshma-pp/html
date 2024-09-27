@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter number:<input type="text" id="num">
+    <button onclick="fact()">FACTORIAL</button>
+    <input type="text" id="answer">
+    <script>
+        
+        function fact()
+        {
+        let fact=1;
+        var i;
+        b=Number(document.getElementById("num").value);
+            for(i=1;i<=b;i++)
+        {
+            fact=fact*i;
+        }
+        document.getElementById("answer").value=fact;
+        }
+
+    </script>
+    
+</body>
+</html>

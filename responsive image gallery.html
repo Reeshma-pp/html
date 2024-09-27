@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Image Gallery</h2>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://i.pinimg.com/564x/b3/5c/c4/b35cc4b4d6312cebb3f4cecc5b4bb38e.jpg">
+      <img src="https://i.pinimg.com/564x/b3/5c/c4/b35cc4b4d6312cebb3f4cecc5b4bb38e.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://i.pinimg.com/564x/5c/c5/fb/5cc5fb323a168c0b05232305d0593794.jpg">
+      <img src="https://i.pinimg.com/564x/5c/c5/fb/5cc5fb323a168c0b05232305d0593794.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://i.pinimg.com/474x/90/fc/a0/90fca04004a08d01fa990a32b4a73cdb.jpg">
+      <img src="https://i.pinimg.com/474x/90/fc/a0/90fca04004a08d01fa990a32b4a73cdb.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://i.pinimg.com/564x/d0/22/5e/d0225ef225dfe240d3758e3044a2fabf.jpg">
+      <img src="https://i.pinimg.com/564x/d0/22/5e/d0225ef225dfe240d3758e3044a2fabf.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+
+</body>
+</html>
+
+

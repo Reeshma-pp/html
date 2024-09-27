@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            position: relative;
+            animation-name: move;
+            animation-duration: 10s;
+            animation-iteration-count: 3;
+            animation-direction: normal;
+        }
+        @keyframes move
+        {
+            0%
+            {
+                left: 0px;
+                background-color: brown;
+            }
+            100%
+            {
+                left: 300px;
+                border-radius: 50px;
+                background-color: chartreuse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

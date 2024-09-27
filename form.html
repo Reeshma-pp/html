@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="">
+        <table>
+            <tr>
+                <td>Name:</td><td><input type="text" placeholder="Your Name" required></td>
+            </tr>
+            <tr>
+                <td>Age:</td><td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Address:</td><td><textarea cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Email:</td><td><input type="email" placeholder="Your Email" required pattern="(?!(^[.-].*|[^@]*\.@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td><td><input type="text" placeholder="Your Phone Number" required pattern="[0-9]{10}"></td>
+            </tr>
+            <tr>
+                <td>Pincode:</td><td><input type="text" minlength="6" maxlength="6"></td>
+            </tr>
+            <tr>
+                <td>Photo:</td><td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td><select>
+                    <option>--Select--</option>
+                    <option>India</option>
+                    <option>China</option>
+                    <option>UAE</option>
+                    <option>UK</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Date:</td><td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Time:</td><td><input type="time"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td><td><input type="radio" name="gender">Male<input type="radio" name="gender">Female<input type="radio" name="gender">Others</td>
+            </tr>
+            <tr>
+                <td>Qualification:</td><td><input type="checkbox">10th<input type="checkbox">+2<input type="checkbox">Degree</td>
+            </tr>
+            <tr>
+                
+                <td><button>Save</button></td>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

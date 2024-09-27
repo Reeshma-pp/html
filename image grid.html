@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        .heading
+        {
+            background-color: antiquewhite;
+            height: 50px;
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+        }
+        h3{
+            padding: 10px;
+        }
+        body
+        {
+            margin: 50px;
+        }
+        .wrapper
+        {
+            max-width: max-content;
+            max-height: max-content;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(3, 3fr 2fr 1fr); */
+            /* grid-auto-rows: 200px; */
+            /* grid-column-gap : 30px; */
+            /* grid-row-gap :30px; */
+            grid-gap :30px;
+        }
+        img
+        {
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h3>Image Gallery</h3>
+
+    </div><br><br>
+    <div class="wrapper">
+        <div class="grid-item1"><img src="https://i.pinimg.com/564x/b3/5c/c4/b35cc4b4d6312cebb3f4cecc5b4bb38e.jpg"></div>
+        <div class="grid-item2"><img src="https://i.pinimg.com/564x/5c/c5/fb/5cc5fb323a168c0b05232305d0593794.jpg"></div>
+        <div class="grid-item3"><img src="https://i.pinimg.com/474x/90/fc/a0/90fca04004a08d01fa990a32b4a73cdb.jpg"></div>
+        <div class="grid-item4"><img src="https://i.pinimg.com/564x/d0/22/5e/d0225ef225dfe240d3758e3044a2fabf.jpg"></div>
+        <div class="grid-item5"><img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?cs=srgb&dl=pexels-pixabay-257360.jpg&fm=jpg"></div>
+        <div class="grid-item6"><img src="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2018/10/bluebells,_oxfordshire.jpg?fit=1500%2C1000&ssl=1"></div>
+        <div class="grid-item7"><img src="https://michiganross.umich.edu/sites/default/files/styles/max_1300x1300/public/images/news-story/butterfly.jpeg?itok=8GuV9Riu"></div>
+        <div class="grid-item8"><img src="https://cdn.pixabay.com/photo/2024/02/27/00/13/heliconia-8599119_1280.jpg"></div>
+       
+    </div>
+</body>
+</html>

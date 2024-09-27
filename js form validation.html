@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Enter Name:<input type="text" id="name_id">
+        <span id="span1"></span><br>
+        Enter Mobile No.:<input type="text" id="mobile_id">
+        <span id="span2"></span><br>
+        Enter Address:<input type="text" id="address_id">
+        <span id="span3"></span><br>
+        Email:<input type="text" id="email_id">
+        <span id="span4"></span><br>
+        Password:<input type="text" id="password_id">
+        <span id="span5"></span><br>
+
+        <button onclick="return validate()">Submit</button>
+    </form>
+    <script>
+        function validate()
+        {
+            var name=document.getElementById("name_id").value;
+            var mobile=document.getElementById("mobile_id").value;
+            var address=document.getElementById("address_id").value;
+            var email=document.getElementById("email_id").value;
+            var password=document.getElementById("password_id").value;
+            
+            if(name=="")
+        {
+            
+            document.getElementById("span1").innerHTML="Enter name"
+            return false;
+        }
+        if(mobile=="")
+        {
+            document.getElementById("span2").innerHTML="Enter mobile num"
+            return false;
+        }
+        if(address=="")
+        {
+            document.getElementById("span3").innerHTML="Enter address"
+            return false;
+        }
+        if(email=="")
+        {
+            document.getElementById("span4").innerHTML="Enter email"
+            return false;
+        }
+        if(password=="")
+        {
+            document.getElementById("span5").innerHTML="Enter password"
+            return false;
+        }
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ASSETS/fontawesome-free-6.6.0-web/css/brands.css">
+    <link rel="stylesheet" href="ASSETS/fontawesome-free-6.6.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="ASSETS/fontawesome-free-6.6.0-web/css/solid.css">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        
+        /* Style the header */
+        .header {
+          padding: 40px;
+          background-color: #333;
+          color: rgb(38, 147, 61);
+        }
+        .h3
+        {
+            margin-top: -20px;
+        }
+        /* Increase the font size of the h1 element */
+        .header h1 {
+            margin-top: -15px;
+          font-size: 40px;
+        }
+        
+        /* Style the top navigation bar */
+        .navbar {
+          overflow: hidden;
+          margin-top: 50px;
+          margin-bottom: -42px;
+          margin-right: 40px;
+          
+        }
+        
+        /* Style the navigation bar links */
+        .navbar a {
+          float: left;
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 20px;
+          text-decoration: none;
+        }
+        
+        /* Right-aligned link */
+        .navbar a.right {
+          float: right;
+          padding: 2px;
+          color: white;
+        }
+        .form
+        {
+            height: 550px;
+            width: 100%;
+            margin-left: 100px;
+            margin-top: 50px;
+            
+            
+        }
+        tr,td
+        {
+            padding: 8px;
+        }
+        .greenline
+        {
+            padding: 2px;
+            background-color: #239640;
+
+        }
+        .footer {
+          padding: 20px;
+          margin-right: 0px;
+          margin-left: 0px;
+          margin-top: 100px;
+          width: 100%;
+          text-align: center;
+          background:#333;
+          color: white;
+        }
+        
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+          .row {   
+            flex-direction: column;
+          }
+        }
+        
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+          .navbar a {
+            float: none;
+            width:100%;
+          }
+        }
+        </style>
+</head>
+<body>
+    <body>
+        <div class="header">
+            <h1>The Photo School</h1>
+            <h3 class="h3">Empowering photographers with every shot.</h3>
+            <div class="navbar">
+                <a href="#" class="right"><button style="background-color: #239640; color: white; border-top-left-radius: 8px; border-top-right-radius:8px ;">Contact Us</button></a>
+                <a href="#" class="right"><button style="background-color: #464545; color: white; border-top-left-radius: 8px; border-top-right-radius:8px">Another Page</button></a>
+                <a href="#" class="right"><button style="background-color: #464545; color: white; border-top-left-radius: 8px; border-top-right-radius:8px">A Page</button></a>
+                <a href="#" class="right"><button style="background-color: #464545; color: white; border-top-left-radius: 8px; border-top-right-radius:8px">About Us</button></a>
+                <a href="css assignment5.html" class="right"><button style="background-color: #464545; color: white; border-top-left-radius: 8px; border-top-right-radius:8px">Home</button></a>
+              </div>
+              
+          </div>
+          <div class="greenline"></div>
+          <div class="form">
+            <!-- code to use an image from our computer
+            <img src="./image/bird.jpeg" alt=""> -->
+            <form action="">
+            <table>
+            <tr>
+                <td>Name</td><td><input type="text"></td>
+            </tr><br>
+            <tr><td>Mobile No.</td><td><input type="text"></td></tr><br>
+            <tr><td>Email</td><td><input type="text"></td></tr>
+            <tr><td></td><td><button>Submit</button></td></tr>
+        </table>
+         </form>
+
+          </div>
+      
+      <div class="footer">
+       
+        <h6>Home | Examples | A Page | Another Page | Contact Us</h6>
+        <p>Copyright </h6> <span><i class="fa-regular fa-copyright"></i> </span>xyz | All rights Reserved</p>
+      </div>
+</body>
+</html>

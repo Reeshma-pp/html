@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="window.alert('Page successfully loaded');">
+    Focus:<input type="text" id="input1" onfocus="focusevent()"/><br>
+    Keydown:<input type="text" id="input2" onkeydown="keydownevent()"/><br>
+    Keyup:<input type="text" id="fname" onkeyup="keyup()"><br>
+    Enter your name:<input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()"><br>
+    <h1 id="mouse" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse</h1><br>
+    <script>
+        function focusevent()
+        {
+            document.getElementById("input1").style.background="red";
+        }
+        function keydownevent()
+        {
+            alert("Pressed a key")
+        }
+        function keyup()
+        {
+            var x=document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+        }
+        function focusFunction()
+        {
+            document.getElementById("myInput").style.background="yellow";
+        }
+        function blurFunction()
+        {
+            document.getElementById("myInput").style.background="red";
+        }
+        function mouseOver()
+        {
+            document.getElementById("mouse").style.color="red";
+        }
+        function mouseOut()
+        {
+            document.getElementById("mouse").style.color="black";
+        }
+
+    </script>
+</body>
+</html>

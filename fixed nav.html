@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Navbar Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: #ff6347; /* Change color on hover */
+}
+
+.content {
+    padding-top: 60px; /* Adjust for the height of the fixed navbar */
+}
+
+section {
+    padding: 60px;
+    height: 100vh;
+}
+
+section:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+section:nth-child(even) {
+    background-color: #ddd;
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section id="home">
+            <h1>Home Section</h1>
+            <p>Scroll down to see the effect.</p>
+        </section>
+        <section id="about">
+            <h1>About Section</h1>
+            <p>This is the about section content.</p>
+        </section>
+        <section id="services">
+            <h1>Services Section</h1>
+            <p>This is the services section content.</p>
+        </section>
+        <section id="contact">
+            <h1>Contact Section</h1>
+            <p>This is the contact section content.</p>
+        </section>
+    </div>
+
+</body>
+</html>
